@@ -29,6 +29,7 @@ export default {
 div {
   font-family: Arial, sans-serif;
   padding: 20px;
+  background-color: #FFF3E0; /* Warna latar belakang yang lebih lembut */
 }
 
 h1 {
@@ -41,11 +42,14 @@ nav {
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  background-color: #FF5733; /* Warna orange untuk latar belakang navigasi */
+  padding: 10px;
+  border-radius: 5px;
 }
 
 nav nuxt-link {
   margin: 0 10px;
-  color: #FF5733; /* Warna orange */
+  color: white; /* Warna putih untuk teks link */
   text-decoration: none;
   font-weight: bold;
 }
@@ -63,3 +67,4 @@ h2 {
   margin-bottom: 10px;
 }
 </style>
+
