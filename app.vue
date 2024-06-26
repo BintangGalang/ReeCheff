@@ -1,4 +1,3 @@
-<!-- pages/index.vue -->
 <template>
   <div>
     <h1>Resep Makanan</h1>
@@ -25,3 +24,42 @@ export default {
   name: 'HomePage'
 }
 </script>
+
+<style scoped>
+div {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+h1 {
+  color: #FF5733; /* Warna orange */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+nav nuxt-link {
+  margin: 0 10px;
+  color: #FF5733; /* Warna orange */
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav nuxt-link:hover {
+  text-decoration: underline;
+}
+
+section {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #FF5733; /* Warna orange */
+  margin-bottom: 10px;
+}
+</style>
