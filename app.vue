@@ -52,6 +52,7 @@ nav nuxt-link {
   color: white; /* Warna putih untuk teks link */
   text-decoration: none;
   font-weight: bold;
+  letter-spacing: 1.5px; /* Jarak antar huruf */
 }
 
 nav nuxt-link:hover {
@@ -67,4 +68,3 @@ h2 {
   margin-bottom: 10px;
 }
 </style>
-
