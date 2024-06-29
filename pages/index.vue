@@ -1,27 +1,38 @@
-<!-- pages/index.vue -->
 <template>
   <div>
-    <h1>Resep Makanan</h1>
-    <nav>
-      <nuxt-link to="/">Home</nuxt-link>
-      <nuxt-link to="/search">Pencarian</nuxt-link>
-      <nuxt-link to="/categories">Kategori</nuxt-link>
-      <nuxt-link to="/profile">Profil</nuxt-link>
-      <nuxt-link to="/upload">Unggah Resep</nuxt-link>
-    </nav>
-
-    <section>
-      <h2>Resep Terbaru</h2>
-      <!-- Daftar resep terbaru -->
-      
-      <h2>Resep Populer</h2>
-      <!-- Daftar resep populer -->
-    </section>
+    <h1>Daftar Resep</h1>
+    <div class="recipes">
+      <RecipeCard
+        v-for="recipe in recipes"
+        :key="recipe.id"
+        :recipe="recipe"
+      />
+    </div>
   </div>
 </template>
 
 <script>
+import RecipeCard from '~/components/RecipeCard.vue'
+
 export default {
-  name: 'HomePage'
+  components: {
+    RecipeCard
+  },
+  data() {
+    return {
+      recipes: [
+        { id: 1, title: 'Nasi Goreng', description: 'Resep Nasi Goreng enak dan lezat.' },
+        { id: 2, title: 'Mie Ayam', description: 'Resep Mie Ayam yang gurih.' },
+        { id: 3, title: 'Sate Ayam', description: 'Resep Sate Ayam dengan bumbu kacang.' }
+      ]
+    }
+  }
 }
 </script>
+
+<style>
+.recipes {
+  display: flex;
+  flex-wrap: wrap;
+}
+</style>
